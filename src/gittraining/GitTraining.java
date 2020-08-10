@@ -16,6 +16,20 @@ public class GitTraining {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        GitTraining.displayFinabonacciSequence(50);
     }
     
+    public static void displayFinabonacciSequence(int n) {
+        long a1 = 0, a2 = 1, a3 = 0;
+        if (n >= 1) 
+            System.out.println(a1);
+        if (n >= 2) 
+            System.out.println(a2);
+        for (int i = 3; i <= n; i++) {
+            a3 = a1 + a2;
+            System.out.println(a3);
+            a1 = a2;
+            a2 = a3;
+        }
+    }
 }
