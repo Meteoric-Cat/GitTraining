@@ -16,7 +16,8 @@ public class GitTraining {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        GitTraining.displayFinabonacciSequence(50);
+//        GitTraining.displayFinabonacciSequence(50);
+        GitTraining.displayContainingSubString("hello world hellhis", "hell");
     }
     
     public static void displayFinabonacciSequence(int n) {
@@ -33,4 +34,14 @@ public class GitTraining {
         }
     }
    
+    public static void displayContainingSubString(String s1, String s2) {
+        int result = 0;
+        String[] subStrings = s1.split(" ");
+        
+        for (String subString : subStrings) {
+            if (subString.contains(s2)) {
+                System.out.println(subString);
+            }
+        }        
+    }
 }
