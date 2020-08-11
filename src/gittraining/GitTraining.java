@@ -16,8 +16,7 @@ public class GitTraining {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-//        GitTraining.displayFinabonacciSequence(50);
-        GitTraining.countNumberOfOccurance("123123 123 32123 12", "123");
+        GitTraining.displayFinabonacciSequence(50);
     }
     
     public static void displayFinabonacciSequence(int n) {
@@ -33,13 +32,5 @@ public class GitTraining {
             a2 = a3;
         }
     }
-    
-    public static void countNumberOfOccurance(String s1, String s2) {
-        int result = 0, fromIndex = 0;
-        while ((fromIndex = s1.indexOf(s2, fromIndex)) != -1) {
-            result++;
-            fromIndex += s2.length();
-        }
-        System.out.println(result);
-    }
+   
 }
